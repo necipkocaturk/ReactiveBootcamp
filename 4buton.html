@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="number1">
+    <input type="number" id="number2">
+    <button name="çarpma" onclick="carpma()">çarpma</button>
+    <button name="toplama" onclick="toplama()">toplama</button>
+    <button name="bölme" onclick="bölme()">bölme</button>
+    <button name="çıkarma" onclick="çıkarma()">çıkarma</button>
+<p id="sonuc"></p>
+<script>
+    
+    function carpma(){
+        var num1 = parseFloat(document.getElementById('number1').value)
+        var num2 = parseFloat(document.getElementById('number2').value)
+        var carpma = num1 * num2
+        document.getElementById('sonuc').innerText = carpma.toFixed(4)
+        }
+
+    function toplama(){
+        var num1 = parseFloat(document.getElementById('number1').value)
+        var num2 = parseFloat(document.getElementById('number2').value)
+
+        var toplamasonuc = num1+num2
+        document.getElementById('sonuc').innerText = toplamasonuc.toFixed(4)
+    }
+    function bölme(){
+        var num1 = parseFloat(document.getElementById('number1').value)
+        var num2 = parseFloat(document.getElementById('number2').value)
+        var bölme = num1/num2
+        document.getElementById('sonuc').innerText = bölme.toFixed(4)
+
+    }
+    function çıkarma(){
+        var num1 = parseFloat(document.getElementById('number1').value)
+        var num2 = parseFloat(document.getElementById('number2').value)
+        var çıkarma = num1-num2
+        document.getElementById('sonuc').innerText = çıkarma.toFixed(4)
+    }
+</script>
+</body>
+</html>
