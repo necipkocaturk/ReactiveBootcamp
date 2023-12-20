@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</body>
+<h1>
+    <body>
+        <input type="text" id="kdv">
+        <button onclick="uyaributonu()">Buton</button>
+        <script>
+        function uyaributonu () {
+            var userInput = document.getElementById('kdv').value * 1.8
+            if(isNaN(userInput))
+            {alert('bu değer geçersizdir')}
+            else
+            {alert(userInput)}
+            
+        }
+    </script>
+</body>
+</html>
